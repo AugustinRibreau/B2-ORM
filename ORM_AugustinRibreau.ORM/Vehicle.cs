@@ -22,5 +22,8 @@ namespace ORM_AugustinRibreau.ORM
         public string Registration { get; set; }
 
         public decimal Volume { get; set; }
+
+        public virtual ICollection<Intervener> Interveners { get; set; }
+
     }
 }

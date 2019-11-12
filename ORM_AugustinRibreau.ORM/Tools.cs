@@ -20,5 +20,8 @@ namespace ORM_AugustinRibreau.ORM
         public string Designation { get; set; }
 
         public DateTime PurchaseDate { get; set; }
+
+        public virtual ICollection<Intervener> Interveners { get; set; }
+
     }
 }

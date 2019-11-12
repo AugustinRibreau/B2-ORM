@@ -14,5 +14,8 @@ namespace ORM_AugustinRibreau.ORM
 
         public DateTime OpeningHours { get; set; }
         public DateTime ClosingHours { get; set; }
+
+        public virtual ICollection<Intervention> Interventions { get; set; }
+
     }
 }

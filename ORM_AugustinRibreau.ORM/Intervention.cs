@@ -16,5 +16,9 @@ namespace ORM_AugustinRibreau.ORM
         [StringLength(100)]
         public string InterventionAddress { get; set; }
 
+        public virtual History History { get; set; }
+        public virtual Intervener Intervener { get; set; }
+
+
     }
 }

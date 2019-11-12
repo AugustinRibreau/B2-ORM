@@ -21,5 +21,11 @@ namespace ORM_AugustinRibreau.ORM
         public string FirstName { get; set; }
 
         public int PersonnelNumber { get; set; }
+
+        public virtual Tools Tools { get; set; }
+        public virtual Vehicle Vehicles { get; set; }
+
+
+
     }
 }

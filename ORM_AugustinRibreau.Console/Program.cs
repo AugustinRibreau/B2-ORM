@@ -13,12 +13,26 @@ namespace ORM_AugustinRibreau.Console
         {
             using (var db = new ContexteBDD())
             {
-                var Intervener = db.Intervener;
                 var Vehicle = db.Vehicle;
-                var Tools = db.Tools;
                 var Intervention = db.Intervention;
                 var History = db.History;
 
+                var intervener = new Intervener()
+                {
+                    LastName = "Mini",
+                    FirstName = "Roux",
+                    PersonnelNumber = 000001
+                };
+                var tool = new Tools
+                {
+                    Description = "Ribreau",
+                    Designation = "Augustin"
+                };
+                //etc...
+
+                db.Tools.Add(tool);
+                db.Intervener.Add(intervener);
+                db.SaveChanges();
             }
 
         }
